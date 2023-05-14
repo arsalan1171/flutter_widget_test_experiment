@@ -10,6 +10,8 @@ class MyWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(child: Text(message));
+    return Center(
+        child: Directionality(
+            textDirection: TextDirection.ltr, child: Text(message)));
   }
 }
